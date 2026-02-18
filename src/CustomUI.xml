@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui" onLoad="RibbonOnLoad">
+    <ribbon>
+        <tabs>
+            <tab id="tabAPAFormatter" label="APA 7">
+
+                <!-- Grupo: Citações -->
+                <group id="grpCitacoes" label="Citações">
+                    <button id="btnInserirCitacao" label="Inserir Citação" size="large" imageMso="QuoteMarksInsert" onAction="InserirCitacao" screentip="Inserir Citação" supertip="Insere uma citação no texto na posição do cursor"/>
+                </group>
+
+                <!-- Grupo: Referências -->
+                <group id="grpReferencias" label="Referências">
+                    <button id="btnNovaReferencia" label="Nova Referência" size="large" imageMso="RecordsAddFromOutlook" onAction="NovaReferencia" screentip="Nova Referência" supertip="Adiciona uma nova referência bibliográfica"/>
+
+                    <button id="btnGerenciarReferencias" label="Gerenciar" size="large" imageMso="DatabaseProperties" onAction="GerenciarReferencias" screentip="Gerenciar Referências" supertip="Visualiza e edita referências existentes"/>
+                </group>
+
+                <!-- Grupo: Bibliografia -->
+                <group id="grpBibliografia" label="Bibliografia">
+                    <button id="btnGerarBibliografia" label="Gerar Bibliografia" size="large" imageMso="TableOfContentsInsertGallery" onAction="GerarListaReferencias" screentip="Gerar Bibliografia" supertip="Gera a lista de referências formatada em APA 7"/>
+
+                    <button id="btnAtualizarCitacoes" label="Atualizar Citações" size="normal" imageMso="RefreshArrows" onAction="AtualizarCitacoes" screentip="Atualizar Citações" supertip="Atualiza todas as citações no documento"/>
+                </group>
+
+                <!-- Grupo: Validação -->
+                <group id="grpValidacao" label="Validação">
+                    <button id="btnValidar" label="Validar" size="large" imageMso="AcceptInvitation" onAction="ValidarDocumento" screentip="Validar Documento" supertip="Valida todas as referências e citações"/>
+                </group>
+
+                <!-- Grupo: Importar/Exportar -->
+                <group id="grpImportExport" label="Importar/Exportar">
+                    <button id="btnImportar" label="Importar" size="normal" imageMso="FileOpen" onAction="ImportarReferencias" screentip="Importar" supertip="Importa referências de arquivo BibTeX ou RIS"/>
+
+                    <button id="btnExportar" label="Exportar" size="normal" imageMso="FileSaveAs" onAction="ExportarReferencias" screentip="Exportar" supertip="Exporta referências para arquivo"/>
+                </group>
+
+            </tab>
+        </tabs>
+    </ribbon>
+</customUI>
